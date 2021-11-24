@@ -3,6 +3,10 @@ body {
     font-size: larger;
     text-align: center;
     margin:0;
+    background-image: url(https://www.univ-lyon1.fr/medias/photo/villdoua-site-20170926-131309-stephanebalmain-iutlyon1_1593178544733-jpg);
+    background-size: 100% 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 header a img{
@@ -50,14 +54,13 @@ nav a:hover {
 main{
     display:grid;
     grid-template-columns: 3;
-    
-}
+
 
 /* rajouté en plus apres modif avec valentin */
 
 footer{
     display:block;
-    width: 100vw;
+    width: 100%;
     background-color: grey;
     position: sticky;
     bottom:0px;
