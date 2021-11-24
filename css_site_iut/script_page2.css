@@ -1,0 +1,82 @@
+
+div.box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns:  1fr 1fr;
+}
+
+/* contenu pseudo élements (formes sans contenu) */
+
+div.shape-top-left {
+    margin-top: 50px;
+    padding: 15px;
+    margin-left: 10vw;
+    background-color:rgb(40, 40, 40);
+    border-top-left-radius: 50%;
+    float: center;
+    shape-outside: margin-box;
+}
+
+div.shape-top-right {
+    margin-top: 50px;
+    padding: 15px;
+    margin-right: 10vw;
+    background-color:rgb(146, 146, 146);
+    border-top-right-radius: 50%;
+    float: center;
+    shape-outside: margin-box;
+}
+
+div.shape-bot-left {
+    margin-bottom: 50px;
+    padding: 15px;
+    margin-left: 10vw;
+    background-color:rgb(146, 146, 146);
+    border-bottom-left-radius: 50%;
+    float: center;
+    shape-outside: margin-box;
+}
+
+div.shape-bot-right {
+    margin-bottom: 50px;
+    padding: 15px;
+    margin-right: 10vw;
+    background-color:rgb(40, 40, 40);
+    border-bottom-right-radius: 50%;
+    float: center;
+    shape-outside: margin-box;
+}
+
+
+/* contenu a l'interieur du menu  */
+
+article.right-content {
+    text-align: left;
+    margin-left: 10px;
+    position: relative;
+    right: 0px;
+}
+
+article.left-content {
+    text-align: right;
+    margin-right:10px;
+    position: relative;
+    left: 0px;
+}
+
+.integrer-intro {
+    text-align: left;
+    margin-right: 20vw;
+}
+
+.image-ronde {
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 200px;
+    height:200px;
+    float: left;
+    shape-outside: margin-box;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 20vw;
+}

@@ -79,69 +79,13 @@ img.lien:hover {
     30% { transform: translate(3px, 2px) rotate(0deg); }
     40% { transform: translate(1px, -1px) rotate(1deg); }
     50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    60% { transform: translate(-px, 1px) rotate(0deg); }
     70% { transform: translate(3px, 1px) rotate(-1deg); }
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-div.box {
-    display: grid;
-    justify-content: center;
-    grid-template-columns:  1fr 1fr;
-}
-
-div.shape-top-left {
-    margin-top: 50px;
-    padding: 15px;
-    margin-left: 10vw;
-    background-color:rgb(40, 40, 40);
-    border-top-left-radius: 50%;
-    float: center;
-    shape-outside: margin-box;
-}
-
-div.shape-top-right {
-    margin-top: 50px;
-    padding: 15px;
-    margin-right: 10vw;
-    background-color:rgb(146, 146, 146);
-    border-top-right-radius: 50%;
-    float: center;
-    shape-outside: margin-box;
-}
-
-article.right-content {
-    text-align: left;
-    margin-left: 10px;
-    position: relative;
-    right: 0px;
-}
-
-article.left-content {
-    text-align: right;
-    margin-right:10px;
-    position: relative;
-    left: 0px;
-}
-
-.integrer-intro {
-    text-align: left;
-    margin-right: 20vw;
-}
-
-.image-ronde {
-    border-radius: 50%;
-    border: 5px solid black;
-    width: 200px;
-    height:200px;
-    float: left;
-    shape-outside: margin-box;
-    position: relative;
-    margin-right: 50px;
-    margin-left: 20vw;
-}
 
 main {
     font-family:  Helvetica;
