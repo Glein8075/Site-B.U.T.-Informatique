@@ -1,4 +1,4 @@
-const timeToChange = 10 //Temps pour que les images défiles en secondes
+const timeToChange = 8 //Temps pour que les images défiles en secondes
 document.querySelector('.carousel').style = `--timeToChange : ${timeToChange}s;`
 const imgs = Array.from(document.querySelectorAll('.carousel .img-container img'))
 const nextImage = (addToIndex = 0) => {
