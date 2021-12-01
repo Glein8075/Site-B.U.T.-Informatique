@@ -7,8 +7,9 @@
     <title>IUT Website</title>
     <link rel="stylesheet" href="../css_site_iut/script_all.css">
     <link rel="stylesheet" href="../css_site_iut/script_accueil.css">
-    <link href="../css_site_iut/caroussel.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css_site_iut/caroussel.css">
     <link rel="icon" href="../images/tete.png" type="image icon">
+    <script src="../js_site_iut/caroussel.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,26 +21,33 @@
       </nav>
     </header>
     <main>
-        <img src="https://www.univ-lyon1.fr/medias/photo/villdoua-site-20170926-131309-stephanebalmain-iutlyon1_1593178544733-jpg">
-        <div class="presentation">
-            <p>Le site de Villeurbanne Doua propose un cadre de travail 
+        <div class="carousel">
+            <div id="arrow-left" class="arrow arrow-left">&#8249;</div>
+            <div class="img-container">
+                <img src="../img/CourCailloux.jpg">
+                <img src="../img/Bib_IUT_Doua_1.jpg">
+                <img src="../img/IUTLyon1.jpg" class="active">
+            </div>
+            <div class="arrow arrow-right">&#8250;</div>
+        </div>
+        <span class="presentation">
+            <p>
+            Le site de Villeurbanne Doua propose un cadre de travail 
             particulièrement agréable avec tous les avantages d’une situation privilégiée 
             sur le plus grand campus de Lyon. Vous disposerez de services et outils tournés 
             vers votre réussite : des bibliothèques propices au travail de groupe comme individuel,
             un wifi Très Haut Débit efficace, des activités sportives, des associations étudiantes,
-            etc. Bref, tous les services d’un grand campus international !</p>
-        </div>
-        <div class="description">
-            <p>
-            Adresse : 
+            etc. Bref, tous les services d’un grand campus international !
+            
+            Adresse :
             IUT Lyon1 Site de Villeurbanne Doua (Public)
             1 Rue de la technologie
             69100 Villeurbanne
             Tel Accueil : 04.72.69.20.00
             Fax : 04.72.69.20.94
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.390117461924!2d4.882652351429983!3d45.785008378560164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c01bcfcd4551%3A0xc63aa9b2af06af29!2sD%C3%A9partement%20informatique%20de%20l&#39;IUT%20Lyon%201!5e0!3m2!1sfr!2sfr!4v1637066562919!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>        
+        </span>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.390117461924!2d4.882652351429983!3d45.785008378560164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c01bcfcd4551%3A0xc63aa9b2af06af29!2sD%C3%A9partement%20informatique%20de%20l&#39;IUT%20Lyon%201!5e0!3m2!1sfr!2sfr!4v1637066562919!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </main>
     <footer>
         <div style="text-align: center;">

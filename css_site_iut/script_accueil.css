@@ -1,36 +1,34 @@
-
-
 main{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-areas: 
 	"car car"
-	"present present"
-	"map map";
-	white-space: pre;
+	"present map"
+	"video video";
 }
 
-.content{
-	background-color: black;
+.carousel
+{
 	grid-area: car;
-	margin: 0;
-}
-main img{
-	height: 100%;
-	width: 100%;
-
 }
 
 .presentation{
 	grid-area: present;
+	text-align: justify;
+	margin-top: 25px;
+	padding-left: 5px;
 }
 
-.description {
+.presentation p
+{
+	background-color: green;
+	color: black;
+	white-space: pre;
+}
+
+#map
+{
 	grid-area: map;
-	display: flex;
-	flex-direction: row;
-	text-align: left;
 	padding-top: 5px;
 }
-

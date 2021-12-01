@@ -1,20 +1,29 @@
 body {
-    background-color:white;
+    background-color:rgb(40, 40, 40);
     font-size: larger;
     text-align: center;
+    color: white;
     margin:0;
 }
 
-header a img{
-    background-color: white;
-    height: 40%;
-    width: 30%;
+header
+{
+    display: block;    
 }
 
+
+
 nav{
+    position: sticky;
     padding-top:5px;
-    background-color: rgb(40, 40, 40);
-    height: 30px;
+    padding-bottom: 5px;
+    background-color: darkcyan;
+    height: 50px;
+}
+
+header nav img{
+    height: 100%;
+    width: 100%;
 }
 
 nav a {
@@ -60,7 +69,6 @@ footer{
     display:block;
     width: 100%;
     background-color: grey;
-    position: sticky;
     bottom:0px;
     justify-content: center;
     text-align:center;
