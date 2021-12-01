@@ -6,14 +6,9 @@ body {
     margin:0;
 }
 
-header
-{
-    display: block;    
-}
-
-
 
 nav{
+    display: block;   
     position: sticky;
     padding-top:5px;
     padding-bottom: 5px;
@@ -21,12 +16,14 @@ nav{
     height: 50px;
 }
 
-header nav img{
+nav img{
     height: 100%;
     width: 100%;
 }
 
-nav a {
+.flexbox-2, .flexbox-3, .flexbox-4{
+    position: relative;
+    top: 10px;
     color: white;
     text-decoration: none;
     transition: transform 100ms ease-in-out;
