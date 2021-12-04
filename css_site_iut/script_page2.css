@@ -10,7 +10,7 @@ div.shape-top-left {
     margin-top: 50px;
     padding: 15px;
     margin-left: 10vw;
-    background-color:grey;
+    background-color:darkcyan;
     border-top-left-radius: 50%;
     float: center;
     shape-outside: margin-box;
@@ -20,7 +20,7 @@ div.shape-top-right {
     margin-top: 50px;
     padding: 15px;
     margin-right: 10vw;
-    background-color:rgb(146, 146, 146);
+    background-color:white;
     border-top-right-radius: 50%;
     float: center;
     shape-outside: margin-box;
@@ -30,7 +30,7 @@ div.shape-bot-left {
     margin-bottom: 50px;
     padding: 15px;
     margin-left: 10vw;
-    background-color:rgb(146, 146, 146);
+    background-color:darkcyan;
     border-bottom-left-radius: 50%;
     float: center;
     shape-outside: margin-box;
@@ -51,15 +51,21 @@ div.shape-bot-right {
 
 article.right-content {
     text-align: left;
-    margin-left: 10px;
     position: relative;
+    padding-left: 10px;
+    margin-right: 10vw;
+    background-color: white;
+    color: black;
     right: 0px;
 }
 
 article.left-content {
     text-align: right;
-    margin-right:10px;
     position: relative;
+    padding-right: 10px;
+    margin-left: 10vw;
+    background-color: darkcyan;
+    color: black;
     left: 0px;
 }
 
