@@ -1,9 +1,15 @@
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+
 body {
     background-color:rgb(40, 40, 40);
     font-size: larger;
     text-align: center;
     color: white;
-    margin:0;
 }
 
 
@@ -55,20 +61,18 @@ nav a:hover {
 }
 
 main{
-    display:grid;
-    grid-template-columns: 3;
+    min-height:100%;
     font-family:  Helvetica;
 }
 
-/* rajouté en plus apres modif avec valentin */
 
 footer{
     display:block;
     width: 100%;
     background-color: grey;
-    bottom:0px;
     justify-content: center;
     text-align:center;
+
 }
 
 img.lien:hover {

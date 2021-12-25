@@ -6,10 +6,3 @@ div.enfant
 div.parent:hover .enfant{
 	display:block;
 }
-
-main 
-{
-	display: flex;
-	flex-direction: column;
-	
-}
