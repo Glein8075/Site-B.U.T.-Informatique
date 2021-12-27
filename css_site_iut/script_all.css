@@ -1,12 +1,13 @@
 body {
     background-color:rgb(40, 40, 40);
-    font-size: larger;
     text-align: center;
     color: white;
+    margin: 0;
 }
 
 
 nav{
+    font-size: larger;
     display: block;   
     position: sticky;
     padding-top:5px;
