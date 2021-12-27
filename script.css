@@ -1,8 +1,0 @@
-div.enfant
-{
- display: none;
-}
-
-div.parent:hover .enfant{
-	display:block;
-}
