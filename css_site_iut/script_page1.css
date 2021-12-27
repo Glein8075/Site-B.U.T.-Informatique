@@ -1,3 +1,14 @@
+main
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	"intro intro"
+	"info photo"
+	"info photo";
+}
+
 span.contenu
 {
  	display: none;
@@ -26,11 +37,18 @@ input:checked + .contenu {
 div.texte 
 {
 	display: flex;
+	grid-area: info;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
-article
+div.intro
 {
+	grid-area: intro;
 	margin: 5%;
+}
+
+.competence
+{
+	grid-area: photo;
 }
