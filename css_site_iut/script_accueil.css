@@ -1,16 +1,10 @@
-main{
+main {
 	display:flex;
     flex-direction: column;
 	justify-content: center;
 }
 
-.carousel
-{
-	height: calc(100% - 50px);
-}
-
-.presentation{
-	/* grid-area: present; */
+.presentation {
 	text-align: justify;
 	margin-top: 25px;
 	padding-left: 5px;
@@ -18,9 +12,7 @@ main{
 	white-space: pre;
 }
 
-#map
-{
-	/* grid-area: map; */
+.map {
 	padding: 5px 0px 30px 0px;
 	width: 60vw;
 	height: 500px;
@@ -28,9 +20,9 @@ main{
 
 .separateur {
 	padding: 15px;
-	background-color: black;
+	background-color: darkcyan;
 	float: center;
     shape-outside: margin-box;
 	border-radius: 0 0 50% 50%;
+	border: 2px black;
 }
-

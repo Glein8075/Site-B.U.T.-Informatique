@@ -1,50 +1,36 @@
-.container-carousel{
-    grid-area: car;
-    overflow-x: hidden;
-}
-.carousel{
+.carousel {
     position:relative;
-}
-.carousel,
-.carousel .img-container,
-.carousel .img-container
-{
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 92vh;
 }
 
-.carousel .img-container
-{
+.carousel .img-container {
    display: flex;
    justify-content: center;
 }
 
-.carousel .img-container img
-{
+.carousel .img-container img {
     width:0;
 }
 
-.carousel .img-container img.active
-{
+.carousel .img-container img.active {
     height: 70%;
     width: 100%;
     animation: var(--timeToChange) in-out forwards;
-
 }
-.arrow{
+.arrow {
     position: absolute;
-    cursor:pointer;
     color:black;
-    top:calc(50vh - calc(50px));
-    font-size: 100px;
+    top:calc(50vh - calc(110px));
+    font-size: 80px;
 }
-.arrow:hover{
+
+.arrow:hover {
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(82,255,228,0);
 }
 
-.arrow-right{
+.arrow-right {
     right:0;
 }
 
