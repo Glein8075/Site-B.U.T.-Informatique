@@ -1,15 +1,36 @@
-div.enfant
+span.contenu
 {
- display: none;
+ 	display: none;
+	width: 50%;
+}
+input {
+  display: none;
 }
 
-div.parent:hover .enfant{
-	display:block;
+label
+{
+	padding-right: 1%;
 }
 
-main 
+h2:hover {
+	padding-right: 0;
+    transform: translateX(5px);
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+}
+
+input:checked + .contenu {
+  	display: block;
+  	padding-left: 25%;
+}
+div.texte 
 {
 	display: flex;
 	flex-direction: column;
-	
+	justify-content: space-around;
+}
+
+article
+{
+	margin: 5%;
 }

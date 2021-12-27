@@ -1,8 +1,19 @@
-div.enfant
-{
- display: none;
+.question {
+  border: 1px solid red;
+  padding: 5px;
+  display: block;
+  cursor: pointer;
+}
+.reponse {
+  border: 1px solid blue;
+  padding: 10px;
+  display: none;
 }
 
-div.parent:hover .enfant{
-	display:block;
+input {
+  display: none;
+}
+input:checked + .reponse {
+  background: red;
+  display: block;
 }
