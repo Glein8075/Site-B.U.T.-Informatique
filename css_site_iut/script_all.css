@@ -6,6 +6,10 @@ body {
     overflow-x: hidden;
 }
 
+main{
+    min-height:100%;
+    font-family: Helvetica;
+}
 
 nav {
     font-size: larger;
@@ -60,18 +64,12 @@ nav :hover {
     text-decoration: none;
 }
 
-main{
-    min-height:100%;
-    font-family:  Helvetica;
-}
 
 footer{
-    display:block;
+    display: block;
     position: relative;
     bottom: 0px;
     background-color: grey;
-    justify-content: center;
-    text-align:center;
 }
 
 img.lien:hover {

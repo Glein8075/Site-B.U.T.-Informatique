@@ -1,15 +1,39 @@
 main {
 	display:flex;
     flex-direction: column;
-	justify-content: center;
+	text-align: center;
 }
 
-.presentation {
-	text-align: justify;
-	margin-top: 25px;
-	padding-left: 5px;
-	color: black;
-	white-space: pre;
+.en-tete {
+	position: absolute;
+	color:ivory;
+	top:45vh;
+	left: calc(50vw - 310px);
+	justify-content: center;
+	text-shadow: 1px 1px 2px black, 0 0 1em cyan, 0 0 0.2em darkcyan;
+	font-size: 250%;
+}
+
+ .en-tete:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0;
+	background: transparent;
+	transition: width 0.5s ease, background-color .5s ease;
+  }
+
+  .en-tete:hover .en-tete:after {
+	width: 50%;
+	background: white;
+  }
+
+.bubules {
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
 }
 
 .map {
@@ -18,11 +42,86 @@ main {
 	height: 500px;
 }
 
+.loca {
+	padding-top:100px;
+}
+
 .separateur {
 	padding: 15px;
-	background-color: darkcyan;
 	float: center;
     shape-outside: margin-box;
 	border-radius: 0 0 50% 50%;
-	border: 2px black;
+	transition: all 0.5s ease-in-out;
+	background-color: cyan;
+	margin-bottom: 150px;
+}
+
+.barre {
+    position:absolute;
+    background-color: darkcyan;
+	top: 121vh;
+    height: 800px;
+    width:6px;
+    left: calc(50% - 3px);
+}
+
+.circle {
+	position:absolute;
+    background-color: darkcyan;
+	top: 120vh;
+    left: calc(50% - 15px);
+	right: 49%;
+	border-radius: 50%;
+	height: 30px;
+}
+
+
+.separateur.scroll {
+	background-color: darkcyan;
+	position:sticky;
+	top:calc(8vh + 10px);
+	z-index: 10;
+}
+
+.boxinfo {
+	visibility: hidden;
+	background: linear-gradient(45deg, darkcyan, rgb(21, 196, 196));
+	padding: 30px;
+	border-radius: 20%;
+    margin: 50px 35% 0 35%;
+	transition: 0.5s ease-in-out;
+}
+
+.boxinfo-1, .boxinfo-3 {
+	position: relative;
+	left: 25%;
+	text-align: left;
+}
+
+.boxinfo-2, .boxinfo-4 {
+	position: relative;
+	right: 25%;
+	text-align: right;
+}
+
+.boxinfo-1.scroll, .boxinfo-3.scroll {
+	visibility: visible;
+	animation: appearsRight 0.5s;
+	animation-iteration-count: 1;
+}
+
+.boxinfo-2.scroll, .boxinfo-4.scroll {
+	visibility: visible;
+	animation: appearsLeft 0.5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes appearsRight {
+    0% { transform: translate(100px, 0px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
+@keyframes appearsLeft {
+    0% { transform: translate(-100px, 0px) }
+    100% { transform: translate(0px, 0px) }	
 }
