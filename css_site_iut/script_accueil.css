@@ -1,36 +1,231 @@
-main{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-template-areas: 
-	"car car"
-	"present map"
-	"video video";
+main {
+	display:flex;
+    flex-direction: column;
+	text-align: center;
 }
 
-.carousel
-{
-	grid-area: car;
+.en-tete {
+	position: absolute;
+	color:ivory;
+	top: calc(50vh - 1em);
+	left: calc(50vw - 310px);
+	justify-content: center;
+	text-shadow: 1px 1px 2px black, 0 0 1em cyan, 0 0 0.2em darkcyan;
+	font-size: 250%;
+	animation: appearsBot 0.5s;
+	animation-iteration-count: 1;
 }
 
-.presentation{
-	grid-area: present;
-	text-align: justify;
-	margin-top: 25px;
-	padding-left: 5px;
+.en-tete:after {
+	content:'';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0%;
+	background: transparent;
+	transition: width 0.5s ease, background-color 0.5s ease;
+}
+   
+.en-tete:hover:after {
+	width: 80%;
+	background: white;
 }
 
-.presentation p
-{
+.map {
+	padding: 5px 0px 30px 0px;
+	width: 60vw;
+	height: 500px;
+	border: 0;
+	filter: invert(100%);
+}
+
+.loca {
+	padding-top:100px;
+}
+
+.separateur {
+	padding: 15px;
+	float: center;
+    shape-outside: margin-box;
+	border-radius: 0 0 50% 50%;
+	transition: all 0.5s ease-in-out;
+	background-color: cyan;
+	margin-bottom: 150px;
+}
+
+.barre {
+	position:absolute;
+    background-color: darkcyan;
+	top: 121vh;
+    height: 550px;
+    width:6px;
+    left: calc(50vw - 3px);
+	border-radius: 0 0 25% 25%;
+}
+
+.circle {
+	position:absolute;
+    background-color: darkcyan;
+	top: 120vh;
+    left: calc(50vw - 15px);
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+}
+
+.separateur.scroll {
+	background-color: darkcyan;
+	position:sticky;
+	top:calc(8vh + 10px);
+	z-index: 10;
+}
+
+.bubules {
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.boxinfo {
+	visibility: hidden;
+	font-size: 180%;
+	background: linear-gradient(45deg, darkcyan, rgb(21, 196, 196));
+	padding: 15px;
+	border-radius: 20%;
+    margin: 20px 40% 0 40%;
+	transition: all 0.5s ease-in-out;
+	font-style: italic;
+}
+
+.boxinfo-1, .boxinfo-3 {
+	position: relative;
+	left: 17%;
+	text-align: left;
+}
+
+.boxinfo-2, .boxinfo-4 {
+	position: relative;
+	right: 17%;
+	text-align: right;
+}
+
+.boxinfo-1.scroll, .boxinfo-3.scroll {
+	visibility: visible;
+	animation: appearsRight 0.5s;
+	animation-iteration-count: 1;
+}
+
+.boxinfo-2.scroll, .boxinfo-4.scroll {
+	visibility: visible;
+	animation: appearsLeft 0.5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes appearsRight {
+    0% { transform: translate(100px, 0px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
+@keyframes appearsLeft {
+    0% { transform: translate(-100px, 0px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
+@keyframes appearsBot {
+    0% { transform: translate(0px, 50px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
+.description {
+	padding-top: 500px;
+}
+
+.structure {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+}
+
+div.structure img {
+	height: 200px;
+	width: 300px;
+	filter: blur(3px);
+}
+
+a:link {
+	text-decoration: none;
+    cursor:-webkit-zoom-in;
+}
+
+.presentation {
+	margin: 100px 50px 0 50px;
+	background-color: darkgray;
+	height: 480px;
+	width: 300px;
+	border-radius: 5%;
+	visibility: hidden;
+	color: white;
+}
+
+.presentation p {
+	padding: 0 25px 50px 25px;
+}
+
+.pres-2 p{
+	padding-top: 20px;
+}
+
+.presentation h3{
+	font-size: 150%;
+	padding-top: 20px;
+}
+
+.pres-1:hover {
+	transition: all 0.5s ease-in-out;
+	background-color: lightcoral;
+}
+
+.pres-1:hover img {
+	transition: all 0.5s ease-in-out;
+	filter: blur(0);
+}
+
+.pres-2:hover {
+	transition: all 0.5s ease-in-out;
 	background-color: green;
-	color: black;
-	white-space: pre;
 }
 
-#map
-{
-	grid-area: map;
-	padding-top: 5px;
-	width: 100% ;
-	height: 50% ;
+.pres-2:hover img {
+	transition: all 0.5s ease-in-out;
+	filter: blur(0);
+}
+
+.pres-3:hover {
+	transition: all 0.5s ease-in-out;
+	background-color: blueviolet;
+}
+
+.pres-3:hover img {
+	transition: all 0.5s ease-in-out;
+	filter: blur(0);
+}
+
+.pres-3.scroll {
+	visibility: visible;
+	animation: appearsRight 0.5s;
+	animation-iteration-count: 1;
+}
+
+.pres-2.scroll {
+	visibility: visible;
+	animation: appearsBot 0.5s;
+	animation-iteration-count: 1;
+}
+
+.pres-1.scroll {
+	visibility: visible;
+	animation: appearsLeft 0.5s;
+	animation-iteration-count: 1;
 }

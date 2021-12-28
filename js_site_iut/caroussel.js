@@ -1,4 +1,4 @@
-const timeToChange = 10 //Temps pour que les images défiles en secondes
+const timeToChange = 5 //Temps pour que les images défiles en secondes
 document.querySelector('.carousel').style = `--timeToChange : ${timeToChange}s;`
 const imgs = Array.from(document.querySelectorAll('.carousel .img-container img'))
 const nextImage = (addToIndex = 0) => {
@@ -10,10 +10,6 @@ const nextImage = (addToIndex = 0) => {
     imgs[nextIndex].classList.toggle('active')
 }
 const interval = setInterval(nextImage, timeToChange * 1000)
-
-document.querySelector('.carousel .arrow-left').addEventListener('click', () => {
-    nextImage(-2)
-})
 
 document.querySelector('.carousel .arrow-right').addEventListener('click', () => {
     nextImage()
