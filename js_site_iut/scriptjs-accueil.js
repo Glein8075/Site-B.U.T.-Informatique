@@ -6,6 +6,10 @@ const boxone = document.querySelector('.boxinfo-1');
 const boxtwo = document.querySelector('.boxinfo-2');
 const boxthree = document.querySelector('.boxinfo-3');
 const boxfour = document.querySelector('.boxinfo-4');
+const linkone = document.querySelector('.pres-1');
+const linktwo = document.querySelector('.pres-2');
+const linkthree = document.querySelector('.pres-3');
+
 
 window.addEventListener('scroll', () => {
 
@@ -14,35 +18,27 @@ window.addEventListener('scroll', () => {
     if(window.scrollY > hauteur) {
         sep.classList.add('scroll');
     }
-    else {
-        sep.classList.remove('scroll');
-    }
 
     if(window.scrollY > (hauteur - 300)) {
         boxone.classList.add('scroll');
     }
-    else {
-        boxone.classList.remove('scroll');
-    }
 
-    if(window.scrollY > hauteur - 100) {
+    if(window.scrollY > hauteur - 150) {
         boxtwo.classList.add('scroll');
     }
-    else {
-        boxtwo.classList.remove('scroll');
+
+    if(window.scrollY > hauteur) {
+        boxthree.classList.add('scroll');
     }
 
     if(window.scrollY > hauteur + 100) {
-        boxthree.classList.add('scroll');
-    }
-    else {
-        boxthree.classList.remove('scroll');
-    }
-
-    if(window.scrollY > hauteur + 300) {
         boxfour.classList.add('scroll');
     }
-    else {
-        boxfour.classList.remove('scroll');
+
+    if(window.scrollY > hauteur + 350) {
+        linkone.classList.add('scroll');
+        linktwo.classList.add('scroll');
+        linkthree.classList.add('scroll');
     }
+
 });

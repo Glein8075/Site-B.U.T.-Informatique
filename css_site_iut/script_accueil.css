@@ -7,39 +7,36 @@ main {
 .en-tete {
 	position: absolute;
 	color:ivory;
-	top:45vh;
+	top: calc(50vh - 1em);
 	left: calc(50vw - 310px);
 	justify-content: center;
 	text-shadow: 1px 1px 2px black, 0 0 1em cyan, 0 0 0.2em darkcyan;
 	font-size: 250%;
+	animation: appearsBot 0.5s;
+	animation-iteration-count: 1;
 }
 
- .en-tete:after {
-	content: '';
+.en-tete:after {
+	content:'';
 	display: block;
 	margin: auto;
-	height: 1px;
-	width: 0;
+	height: 3px;
+	width: 0%;
 	background: transparent;
-	transition: width 0.5s ease, background-color .5s ease;
-  }
-
-  .en-tete:hover .en-tete:after {
-	width: 50%;
+	transition: width 0.5s ease, background-color 0.5s ease;
+}
+   
+.en-tete:hover:after {
+	width: 80%;
 	background: white;
-  }
-
-.bubules {
-	text-align: center;
-	color: white;
-	display: flex;
-	flex-direction: column;
 }
 
 .map {
 	padding: 5px 0px 30px 0px;
 	width: 60vw;
 	height: 500px;
+	border: 0;
+	filter: invert(100%);
 }
 
 .loca {
@@ -57,24 +54,24 @@ main {
 }
 
 .barre {
-    position:absolute;
+	position:absolute;
     background-color: darkcyan;
 	top: 121vh;
-    height: 800px;
+    height: 550px;
     width:6px;
-    left: calc(50% - 3px);
+    left: calc(50vw - 3px);
+	border-radius: 0 0 25% 25%;
 }
 
 .circle {
 	position:absolute;
     background-color: darkcyan;
 	top: 120vh;
-    left: calc(50% - 15px);
-	right: 49%;
+    left: calc(50vw - 15px);
 	border-radius: 50%;
 	height: 30px;
+	width: 30px;
 }
-
 
 .separateur.scroll {
 	background-color: darkcyan;
@@ -83,24 +80,33 @@ main {
 	z-index: 10;
 }
 
+.bubules {
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
 .boxinfo {
 	visibility: hidden;
+	font-size: 180%;
 	background: linear-gradient(45deg, darkcyan, rgb(21, 196, 196));
-	padding: 30px;
+	padding: 15px;
 	border-radius: 20%;
-    margin: 50px 35% 0 35%;
-	transition: 0.5s ease-in-out;
+    margin: 20px 40% 0 40%;
+	transition: all 0.5s ease-in-out;
+	font-style: italic;
 }
 
 .boxinfo-1, .boxinfo-3 {
 	position: relative;
-	left: 25%;
+	left: 17%;
 	text-align: left;
 }
 
 .boxinfo-2, .boxinfo-4 {
 	position: relative;
-	right: 25%;
+	right: 17%;
 	text-align: right;
 }
 
@@ -124,4 +130,102 @@ main {
 @keyframes appearsLeft {
     0% { transform: translate(-100px, 0px) }
     100% { transform: translate(0px, 0px) }	
+}
+
+@keyframes appearsBot {
+    0% { transform: translate(0px, 50px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
+.description {
+	padding-top: 500px;
+}
+
+.structure {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+}
+
+div.structure img {
+	height: 200px;
+	width: 300px;
+	filter: blur(3px);
+}
+
+a:link {
+	text-decoration: none;
+    cursor:-webkit-zoom-in;
+}
+
+.presentation {
+	margin: 100px 50px 0 50px;
+	background-color: darkgray;
+	height: 480px;
+	width: 300px;
+	border-radius: 5%;
+	visibility: hidden;
+	color: white;
+}
+
+.presentation p {
+	padding: 0 25px 50px 25px;
+}
+
+.pres-2 p{
+	padding-top: 20px;
+}
+
+.presentation h3{
+	font-size: 150%;
+	padding-top: 20px;
+}
+
+.pres-1:hover {
+	transition: all 0.5s ease-in-out;
+	background-color: lightcoral;
+}
+
+.pres-1:hover img {
+	transition: all 0.5s ease-in-out;
+	filter: blur(0);
+}
+
+.pres-2:hover {
+	transition: all 0.5s ease-in-out;
+	background-color: green;
+}
+
+.pres-2:hover img {
+	transition: all 0.5s ease-in-out;
+	filter: blur(0);
+}
+
+.pres-3:hover {
+	transition: all 0.5s ease-in-out;
+	background-color: blueviolet;
+}
+
+.pres-3:hover img {
+	transition: all 0.5s ease-in-out;
+	filter: blur(0);
+}
+
+.pres-3.scroll {
+	visibility: visible;
+	animation: appearsRight 0.5s;
+	animation-iteration-count: 1;
+}
+
+.pres-2.scroll {
+	visibility: visible;
+	animation: appearsBot 0.5s;
+	animation-iteration-count: 1;
+}
+
+.pres-1.scroll {
+	visibility: visible;
+	animation: appearsLeft 0.5s;
+	animation-iteration-count: 1;
 }

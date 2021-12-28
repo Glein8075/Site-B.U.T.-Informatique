@@ -15,8 +15,8 @@ nav {
     font-size: larger;
     display: block;
     position: sticky;
-    padding-top:5px;
-    padding-bottom: 5px;
+    padding-top: calc(4vh - 1em);
+    padding-bottom: calc(4vh - 1em);
     background-color: darkcyan;
     height: 8vh;
     top:0;
