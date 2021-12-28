@@ -1,8 +1,15 @@
 main {
 	display:flex;
-    flex-direction: column;
+	flex-direction: column;
 	text-align: center;
 }
+
+a:link {
+	text-decoration: none;
+	cursor:-moz-grabbing;
+}
+
+/* div carrousel */
 
 .en-tete {
 	position: absolute;
@@ -31,17 +38,12 @@ main {
 	background: white;
 }
 
-.map {
-	padding: 5px 0px 30px 0px;
-	width: 60vw;
-	height: 500px;
-	border: 0;
-	filter: invert(100%);
-}
 
-.loca {
-	padding-top:100px;
-}
+
+
+
+
+/* div bubule */
 
 .separateur {
 	padding: 15px;
@@ -122,24 +124,12 @@ main {
 	animation-iteration-count: 1;
 }
 
-@keyframes appearsRight {
-    0% { transform: translate(100px, 0px) }
-    100% { transform: translate(0px, 0px) }	
-}
 
-@keyframes appearsLeft {
-    0% { transform: translate(-100px, 0px) }
-    100% { transform: translate(0px, 0px) }	
-}
 
-@keyframes appearsBot {
-    0% { transform: translate(0px, 50px) }
-    100% { transform: translate(0px, 0px) }	
-}
 
-.description {
-	padding-top: 500px;
-}
+
+
+/* div structure */
 
 .structure {
 	display: flex;
@@ -154,13 +144,8 @@ div.structure img {
 	filter: blur(3px);
 }
 
-a:link {
-	text-decoration: none;
-    cursor:-webkit-zoom-in;
-}
-
 .presentation {
-	margin: 100px 50px 0 50px;
+	margin: 100px 4vw 0 4vw;
 	background-color: darkgray;
 	height: 480px;
 	width: 300px;
@@ -228,4 +213,72 @@ a:link {
 	visibility: visible;
 	animation: appearsLeft 0.5s;
 	animation-iteration-count: 1;
+}
+
+
+
+
+
+/* div presentation // animation sur les nuages */
+
+.nuage-1.scroll {
+	visibility: visible;
+	animation: appearsLeft 0.5s;
+	animation-iteration-count: 1;
+}
+
+.nuage-2.scroll {
+	visibility: visible;
+	animation: appearsRight 0.5s;
+	animation-iteration-count: 1;
+}
+
+.nuage-3.scroll {
+	visibility: visible;
+	animation: appearsLeft 0.5s;
+	animation-iteration-count: 1;
+}
+
+.nuage-4.scroll {
+	visibility: visible;
+	animation: appearsRight 0.5s;
+	/* animation-iteration-count: 1; */
+}
+
+
+
+/* div loca */
+
+.map {
+	padding: 5px 0px 30px 0px;
+	width: 60vw;
+	height: 500px;
+	border: 0;
+	filter: invert(100%);
+}
+
+.loca {
+	padding-top:100px;
+}
+
+
+
+
+
+
+/* animations */
+
+@keyframes appearsRight {
+    0% { transform: translate(100px, 0px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
+@keyframes appearsLeft {
+    0% { transform: translate(-100px, 0px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
+@keyframes appearsBot {
+    0% { transform: translate(0px, 50px) }
+    100% { transform: translate(0px, 0px) }	
 }
