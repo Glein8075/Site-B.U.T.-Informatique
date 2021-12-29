@@ -1,3 +1,6 @@
+// feuille javascript faite main 
+//(inspiré de tutoriels sur internet mais pas de copié collé)
+
 const sep = document.querySelector('.separateur');
 const div = document.querySelector('.carousel');
 const boxone = document.querySelector('.boxinfo-1');
@@ -11,11 +14,10 @@ const cloudone = document.querySelector('.nuage-1');
 const cloudtwo = document.querySelector('.nuage-2');
 const cloudthree = document.querySelector('.nuage-3');
 const cloudfour = document.querySelector('.nuage-4');
-
-
+const littlecloud = document.querySelectorAll('div.small');
 
 let hauteur = div.clientHeight;
-let hauteur2 = 1700;
+let hauteur2 = 1650;
 
 window.addEventListener('scroll', () => {
 
@@ -52,6 +54,9 @@ window.addEventListener('scroll', () => {
 
     if(window.scrollY > hauteur2) {
         cloudone.classList.add('scroll');
+        for(let i = 0; i < littlecloud.length; i ++) {
+            littlecloud[i].classList.add('scroll');    
+          }
     }
 
     if(window.scrollY > hauteur2 + 150) {

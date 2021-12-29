@@ -35,7 +35,7 @@ a:link {
    
 .en-tete:hover:after {
 	width: 80%;
-	background: white;
+	background: ivory;
 }
 
 
@@ -84,7 +84,7 @@ a:link {
 
 .bubules {
 	text-align: center;
-	color: white;
+	color: ivory;
 	display: flex;
 	flex-direction: column;
 }
@@ -151,7 +151,7 @@ div.structure img {
 	width: 300px;
 	border-radius: 5%;
 	visibility: hidden;
-	color: white;
+	color: ivory;
 }
 
 .presentation p {
