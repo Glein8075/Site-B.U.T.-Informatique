@@ -1,12 +1,13 @@
 :root { /* variables de couleurs pour simplifier les changements généraux de couleurs */
     --col1: rgb(0, 167, 167);
-    --col1bis: ivory;
+    --col1bis: rgb(27, 27, 27);
 }
 
 /* parametres generaux des nuages */
 
 .description {
 	padding-top: 150px;
+    overflow-x: hidden;
 }
 
 .nuage {
@@ -155,7 +156,7 @@
 }
 
 .nuage:hover p {
-    color: rgb(27, 27, 27);
+    color: ivory;
 }
 
 /* petits nuages qui passent derriere en animation */

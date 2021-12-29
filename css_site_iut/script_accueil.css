@@ -2,6 +2,8 @@ main {
 	display:flex;
 	flex-direction: column;
 	text-align: center;
+	height: 100%;
+	width: 100%;
 }
 
 a:link {
@@ -15,7 +17,7 @@ a:link {
 	position: absolute;
 	color:ivory;
 	top: calc(50vh - 1em);
-	left: calc(50vw - 310px);
+	left: calc(50vw - 370px);
 	justify-content: center;
 	text-shadow: 1px 1px 2px black, 0 0 1em cyan, 0 0 0.2em darkcyan;
 	font-size: 250%;
@@ -29,6 +31,7 @@ a:link {
 	margin: auto;
 	height: 3px;
 	width: 0%;
+	border-radius: 20%;
 	background: transparent;
 	transition: width 0.5s ease, background-color 0.5s ease;
 }
@@ -47,7 +50,6 @@ a:link {
 
 .separateur {
 	padding: 15px;
-	float: center;
     shape-outside: margin-box;
 	border-radius: 0 0 50% 50%;
 	transition: all 0.5s ease-in-out;
@@ -61,7 +63,7 @@ a:link {
 	top: 121vh;
     height: 550px;
     width:6px;
-    left: calc(50vw - 3px);
+    left: calc(50vw - 13px);
 	border-radius: 0 0 25% 25%;
 }
 
@@ -69,7 +71,7 @@ a:link {
 	position:absolute;
     background-color: darkcyan;
 	top: 120vh;
-    left: calc(50vw - 15px);
+    left: calc(50vw - 25px);
 	border-radius: 50%;
 	height: 30px;
 	width: 30px;
@@ -78,7 +80,7 @@ a:link {
 .separateur.scroll {
 	background-color: darkcyan;
 	position:sticky;
-	top:calc(8vh + 10px);
+	top: 8vh;
 	z-index: 10;
 }
 
@@ -93,7 +95,7 @@ a:link {
 	visibility: hidden;
 	font-size: 180%;
 	background: linear-gradient(45deg, darkcyan, rgb(21, 196, 196));
-	padding: 15px;
+	padding: 15px ;
 	border-radius: 20%;
     margin: 20px 40% 0 40%;
 	transition: all 0.5s ease-in-out;
@@ -104,12 +106,14 @@ a:link {
 	position: relative;
 	left: 17%;
 	text-align: left;
+	padding-left: 30px;
 }
 
 .boxinfo-2, .boxinfo-4 {
 	position: relative;
 	right: 17%;
 	text-align: right;
+	padding-right: 30px;
 }
 
 .boxinfo-1.scroll, .boxinfo-3.scroll {
@@ -123,6 +127,7 @@ a:link {
 	animation: appearsLeft 0.5s;
 	animation-iteration-count: 1;
 }
+
 
 
 
@@ -158,7 +163,7 @@ div.structure img {
 	padding: 0 25px 50px 25px;
 }
 
-.pres-2 p{
+.pres-2 p, .pres-3 p{
 	padding-top: 20px;
 }
 
@@ -251,14 +256,42 @@ div.structure img {
 
 .map {
 	padding: 5px 0px 30px 0px;
-	width: 60vw;
-	height: 500px;
+	width: 50px;
+	height: 30px;
 	border: 0;
 	filter: invert(100%);
+	border-radius: 10%;
+	position: fixed;
+	right: -150px;
+	bottom: 100px;
+	transition: all 0.5s ease-in-out;
 }
 
-.loca {
-	padding-top:100px;
+.map.scroll {
+	right: 100px;
+	width: 600px;
+	height: 400px;
+}
+
+.explication-map, .adresse {
+	background: linear-gradient(45deg, darkcyan, rgb(26, 172, 172));
+	padding: 20px;
+	position: relative;
+	bottom: 50px;
+	right: 350px;
+	border-radius: 10%;
+	margin: 0 35% 50px 35%;
+	visibility: hidden;
+}
+
+.explication-map.scroll  {
+	visibility: visible;
+	animation: appearsLeft 0.5s;
+}
+
+.adresse.scroll  {
+	visibility: visible;
+	animation: appearsLeft 0.5s;
 }
 
 
@@ -282,3 +315,9 @@ div.structure img {
     0% { transform: translate(0px, 50px) }
     100% { transform: translate(0px, 0px) }	
 }
+
+/* media querries pour le responsive */
+
+/* @media (width < height) {
+
+} */

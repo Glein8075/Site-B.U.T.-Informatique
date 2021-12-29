@@ -15,9 +15,14 @@ const cloudtwo = document.querySelector('.nuage-2');
 const cloudthree = document.querySelector('.nuage-3');
 const cloudfour = document.querySelector('.nuage-4');
 const littlecloud = document.querySelectorAll('div.small');
+const carte = document.querySelector('.map');
+const mapinfo1 = document.querySelector('.explication-map');
+const mapinfo2 = document.querySelector('.adresse');
+
 
 let hauteur = div.clientHeight;
 let hauteur2 = 1650;
+let hauteur3 = 2700;
 
 window.addEventListener('scroll', () => {
 
@@ -55,8 +60,8 @@ window.addEventListener('scroll', () => {
     if(window.scrollY > hauteur2) {
         cloudone.classList.add('scroll');
         for(let i = 0; i < littlecloud.length; i ++) {
-            littlecloud[i].classList.add('scroll');    
-          }
+            littlecloud[i].classList.add('scroll');
+        }
     }
 
     if(window.scrollY > hauteur2 + 150) {
@@ -70,4 +75,20 @@ window.addEventListener('scroll', () => {
     if(window.scrollY > hauteur2 + 500) {
         cloudfour.classList.add('scroll');
     }
-});
+
+    if(window.scrollY > hauteur3 - 300) {
+        mapinfo1.classList.add('scroll');
+    }
+
+    if(window.scrollY > hauteur3 - 100) {
+        mapinfo2.classList.add('scroll');
+    }
+
+    if(window.scrollY > hauteur3) {
+        carte.classList.add('scroll');
+    }
+    else {
+        carte.classList.remove('scroll');
+    }
+    
+})
