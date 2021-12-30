@@ -3,6 +3,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     height: 92vh;
+    visibility: visible;
 }
 
 .carousel .img-container {
@@ -49,3 +50,10 @@
       transform:translateX(-100%);
     }
   }
+
+@media (max-width: 1300px) {
+
+    .carousel .img-container {
+        visibility: hidden;
+    }
+}

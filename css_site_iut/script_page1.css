@@ -118,7 +118,7 @@ img.competence:hover {
     100% { transform: translate(0px, 0px) }	
 }
 
-@media (max-width: 995px) {
+@media (max-width: 1035px) {
 
     .flexbox-2 {
         top: 3px;
@@ -136,7 +136,7 @@ img.competence:hover {
 	}
 
 	.propos-2 {
-		border-bottom-right-radius: 10%;
+		border-bottom-left-radius: 0%;
 	}
 
 	.propos-3 {

@@ -22,11 +22,11 @@ const mapinfo2 = document.querySelector('.adresse');
 
 let hauteur = div.clientHeight;
 let hauteur2 = 1650;
-let hauteur3 = 2700;
+let hauteur3 = 2800;
 
 window.addEventListener('scroll', () => {
 
-    // console.log(window.scrollY);
+    console.log(hauteur3);
 
     if(window.scrollY > hauteur) {
         sep.classList.add('scroll');
@@ -59,20 +59,20 @@ window.addEventListener('scroll', () => {
 
     if(window.scrollY > hauteur2) {
         cloudone.classList.add('scroll');
+    }
+    
+    if(window.scrollY > hauteur2 + 200) {
+        cloudtwo.classList.add('scroll');
+    }
+    
+    if(window.scrollY > hauteur2 + 400) {
+        cloudthree.classList.add('scroll');
         for(let i = 0; i < littlecloud.length; i ++) {
             littlecloud[i].classList.add('scroll');
         }
     }
 
-    if(window.scrollY > hauteur2 + 150) {
-        cloudtwo.classList.add('scroll');
-    }
-
-    if(window.scrollY > hauteur2 + 350) {
-        cloudthree.classList.add('scroll');
-    }
-
-    if(window.scrollY > hauteur2 + 500) {
+    if(window.scrollY > hauteur2 + 600) {
         cloudfour.classList.add('scroll');
     }
 

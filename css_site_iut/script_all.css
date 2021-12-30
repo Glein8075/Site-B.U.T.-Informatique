@@ -151,7 +151,7 @@ img.lien:hover {
 
 } */
 
-@media (max-width: 995px) {
+@media (max-width: 1035px) {
 
     .flexbox-2, .flexbox-3, .flexbox-4, .flexbox-5 {
         position: relative;
