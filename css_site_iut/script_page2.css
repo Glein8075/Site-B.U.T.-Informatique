@@ -4,6 +4,12 @@ div.box {
     grid-template-columns:  1fr 1fr;
 }
 
+.flexbox-3 {
+    color: green;
+    font-size: 120%;
+    top: 12px;
+}
+
 /* contenu pseudo élements (formes sans contenu) */
 
 div.shape-top-left {

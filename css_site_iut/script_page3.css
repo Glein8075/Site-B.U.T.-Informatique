@@ -4,6 +4,12 @@
   font-size: 100%;
 }
 
+.flexbox-4 {
+  color: purple;
+  font-size: 120%;
+  top: 12px;
+}
+
 .parallax{
   background: url("../images/DevApp.jpg") no-repeat center;
   background-size: cover;
