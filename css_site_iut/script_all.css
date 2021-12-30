@@ -4,6 +4,7 @@ body {
     color: white;
     margin: 0;
     overflow-x: hidden;
+    font-family: Helvetica;
 }
 
 h1 {
@@ -35,7 +36,6 @@ h1:hover:after {
 
 main{
     min-height:100%;
-    font-family: Helvetica;
 }
 
 nav {
@@ -154,9 +154,7 @@ img.lien:hover {
 @media (max-width: 1035px) {
 
     .flexbox-2, .flexbox-3, .flexbox-4, .flexbox-5 {
-        position: relative;
         top: 5px;
-        text-decoration: none;
     }
 
 }
@@ -165,5 +163,13 @@ img.lien:hover {
     
     h1 {
         font-size: 150%;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .flexbox-2, .flexbox-3, .flexbox-4, .flexbox-5 {
+        top: 10px;
+        font-size: 70%;
     }
 }

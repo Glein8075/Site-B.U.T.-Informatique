@@ -39,35 +39,72 @@
             echo "Message envoyé"               
          }
 ?> -->
-      <nav class="page-two flexbox-container">
-        <a href="site-iut-beta.html" class="flexbox-1 flexbox-item"><img src="../images/logoIUTBlanc.png" alt="image"/></a>
+
+
+      <nav class="flexbox-container">
+
+        <a href="site-iut-beta.html" class="flexbox-1 flexbox-item"><img src="../images/logoIUTBlanc.png" alt="logo de l'IUT Lyon 1"/></a>
         <a href="page-1.html" class="flexbox-2 flexbox-item">A propos du BUT</a>
         <a href="page-2.html" class="flexbox-3 flexbox-item">Integrer le BUT</a>
         <a href="page-3.html" class="flexbox-4 flexbox-item">Débouchés du BUT</a>
         <a href="contact.html" class="flexbox-5 flexbox-item">Contactez-nous</a>
+
       </nav>
+
+
       <main>
+
+      <div class="separateur"></div>
+      
+
       <h1>Contactez-nous</h1>
-      <span>Si vous avez des questions à nous faire part, vous pouvez la poser ici</span>
-      <form action="contact.php" method="post">
-         <label>Nom :
+
+      <div class="explication-form">
+         <p>
+            Si vous avez des questions à nous faire parvenir ou un message, vous pouvez nous l'envoyer ci dessous
+         </p>
+      </div>
+
+      <form action="contact.php" method="post" class="formulaire">
+
+         <label class="nom">
+            Nom :
             <input type="text" name="nom" value="Saisissez votre nom" />
          </label>
-         <label>Prénom :
+
+         <label class="prenom">
+            Prénom :
             <input type="text" name="prenom" value="Saisissez votre prénom"/>
          </label>
-         <label>Mail :
+
+         <label class="mail">
+            Mail :
             <input type="email" name="mail" value="Saisissez votre mail"/>            
          </label>
-         <label> Message :
-            <textarea name="message" cols="40" rows="5" value="Saisissez votre message"></textarea>
+
+         <label class="message"> 
+            Message :
+            <textarea name="message" cols="40" rows="4">Saisissez votre message</textarea>
          </label>
+
          <label>
-            <input type="submit" value="Envoyer"/>
-            <input type="reset" class="btn" value="Rétablir" />
+
+            <input type="submit" class="boutton" value="Envoyer"/>
+
+            <input type="reset" class="boutton" value="Réinitialiser" />
+
          </label>
+
       </form>
+
+      <div class="lien-reseaux">
+         <p>
+            Veuillez retrouver ci dessous tous les réseaux sociaux de l'IUT Lyon 1
+         </p>
+      </div>
+
    </main>
+
    <footer>
         <a href="https://www.facebook.com/IUTLyon1" class="lien-externe">
         <img src="https://iut.univ-lyon1.fr/medias/photo/facebook_1382528262299-png?ID_FICHE=226290" alt="lien image facebook" class="lien">
