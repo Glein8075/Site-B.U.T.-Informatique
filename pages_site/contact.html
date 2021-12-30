@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+         <title>Contactez-nous</title>
+         <meta charset="utf-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="../css_site_iut/script_all.css">
+         <link rel="stylesheet" href="../css_site_iut/script_contact.css">
+
+    </head>
+   <body>
+   <!-- code s'il y aurait une base de donnée -->
+   <!-- connexion à la base de données-->
+<!--    <?php include "connexion.php"; ?>
+   <?php // vérification de tous les champs
+         $condition=true;
+         if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['message']) || empty($_POST['mail']))
+         {
+            echo "ERREUR : Tous les champs n'ont pas été renseignés.";
+            $condition=false;
+         }
+         else
+         {
+            $nom=$_POST['nom'];
+            $prenom=$_POST['prenom'];
+            $message=$_POST['message'];
+            $mail=$_POST['mail'];
+            
+         }  
+         if ($condition) { // si toutes les conditions sont réunies :
+            //envoie du message dans la BDD
+            $reponse=$bdd->prepare('insert into Message values (:mail, :nom, :prenom, :message)');
+            $reponse->execute(array(
+               "mail" => htmlspecialchars($mail),
+               "nom" => htmlspecialchars($nom),
+               "prenom" => htmlspecialchars($prenom),
+               "message" => htmlspecialchars($message),
+            ));
+            echo "Message envoyé"               
+         }
+?> -->
+      <nav class="page-two flexbox-container">
+        <a href="site-iut-beta.html" class="flexbox-1 flexbox-item"><img src="../images/logoIUTBlanc.png" alt="image"/></a>
+        <a href="page-1.html" class="flexbox-2 flexbox-item">A propos du BUT</a>
+        <a href="page-2.html" class="flexbox-3 flexbox-item">Integrer le BUT</a>
+        <a href="page-3.html" class="flexbox-4 flexbox-item">Débouchés du BUT</a>
+        <a href="contact.html" class="flexbox-5 flexbox-item">Contactez-nous</a>
+      </nav>
+      <main>
+      <h1>Contactez-nous</h1>
+      <span>Si vous avez des questions à nous faire part, vous pouvez la poser ici</span>
+      <form action="contact.php" method="post">
+         <label>Nom :
+            <input type="text" name="nom" value="Saisissez votre nom" />
+         </label>
+         <label>Prénom :
+            <input type="text" name="prenom" value="Saisissez votre prénom"/>
+         </label>
+         <label>Mail :
+            <input type="email" name="mail" value="Saisissez votre mail"/>            
+         </label>
+         <label> Message :
+            <textarea name="message" cols="40" rows="5" value="Saisissez votre message"></textarea>
+         </label>
+         <label>
+            <input type="submit" value="Envoyer"/>
+            <input type="reset" class="btn" value="Rétablir" />
+         </label>
+      </form>
+   </main>
+   <footer>
+        <a href="https://www.facebook.com/IUTLyon1" class="lien-externe">
+        <img src="https://iut.univ-lyon1.fr/medias/photo/facebook_1382528262299-png?ID_FICHE=226290" alt="lien image facebook" class="lien">
+        </a> 
+        <a href="https://twitter.com/IUTLyon1" class="lien-externe">
+        <img src="https://iut.univ-lyon1.fr/medias/photo/twitter2_1587624381029-png?ID_FICHE=226290" alt="lien image twitter" class="lien">
+        </a> 
+        <a href="https://www.instagram.com/iutlyon1/" class="lien-externe">
+        <img src="https://iut.univ-lyon1.fr/medias/photo/instagram_1587623902382-png?ID_FICHE=226290" alt="lien image instagram" class="lien">
+        </a> 
+        <a href="https://www.linkedin.com/school/iut-lyon-1/" class="lien-externe">
+        <img src="https://iut.univ-lyon1.fr/medias/photo/linkedin_1569403258252-png?ID_FICHE=226290" alt="lien image linkedin" class="lien">           
+        </a> 
+        <a href="https://www.youtube.com/user/IUTLYON1" class="lien-externe">
+        <img src="https://iut.univ-lyon1.fr/medias/photo/youtube_1382528263991-png?ID_FICHE=226290" alt="lien image youtube" class="lien">
+        </a>
+        <a href="https://tube.nocturlab.fr/video-channels/iut_lyon_1/" class="lien-externe">
+        <img src="https://iut.univ-lyon1.fr/medias/photo/peertube-stephanebalmain-iutlyon1_1600775223190-png?ID_FICHE=226290" alt="lien image nocturlab" class="lien">                                                                          
+        </a> 
+        <a href="http://feeds.feedburner.com/IutLyon1" class="lien-externe">
+        <img src="https://iut.univ-lyon1.fr/medias/photo/rss_1382528258753-png?ID_FICHE=226290" alt="lien image feedburner" class="lien">
+        </a>
+        <a href="mailto:iut%2Ewebmaster%40univ-lyon1%2Efr" class="lien-externe">            
+        <img src="https://iut.univ-lyon1.fr/medias/photo/contact-email_1382528263503-png?ID_FICHE=226290" alt="lien image mail universitaire" class="lien">
+        </a>
+    </footer>
+   </body>
+</html>

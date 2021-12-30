@@ -20,7 +20,7 @@ main {
 	content:'';
 	display: block;
 	margin: auto;
-	height: 3px;
+	height: 1%;
 	width: 0%;
 	background: transparent;
 	transition: width 0.5s ease, background-color 0.5s ease;
@@ -33,7 +33,7 @@ main {
 
 .map {
 	padding: 5px 0px 30px 0px;
-	width: 60vw;
+	width: 75%;
 	height: 500px;
 	border: 0;
 	filter: invert(100%);
@@ -41,6 +41,7 @@ main {
 
 .loca {
 	padding-top:100px;
+	text-decoration: underline;
 }
 
 .separateur {
@@ -91,9 +92,9 @@ main {
 	visibility: hidden;
 	font-size: 180%;
 	background: linear-gradient(45deg, darkcyan, rgb(21, 196, 196));
-	padding: 15px;
+	padding: 1%;
 	border-radius: 20%;
-    margin: 20px 40% 0 40%;
+    margin: 0 40% 0 40%;
 	transition: all 0.5s ease-in-out;
 	font-style: italic;
 }
@@ -149,8 +150,8 @@ main {
 }
 
 div.structure img {
-	height: 200px;
-	width: 300px;
+	height: 40%;
+	width: 100%;
 	filter: blur(3px);
 }
 

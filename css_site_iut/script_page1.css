@@ -7,6 +7,7 @@ main
 	"intro intro"
 	"info photo"
 	"info photo";
+	font-size: 90%;
 }
 
 span.contenu
@@ -24,7 +25,7 @@ label
 }
 
 h2:hover {
-	padding-right: 0;
+		padding-right: 0;
     transform: translateX(5px);
     transition: transform 100ms ease-in-out;
     cursor: pointer;
@@ -51,4 +52,9 @@ div.intro
 .competence
 {
 	grid-area: photo;
+}
+.competence img
+{
+	height: 50%;
+	width: 50%;
 }

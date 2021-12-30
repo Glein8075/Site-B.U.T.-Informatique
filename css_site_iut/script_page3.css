@@ -1,12 +1,12 @@
 .container{
   max-width: 100%;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: 100%;
 }
 
 .parallax{
   background: url("../images/DevApp.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 500px;
+  height: 350px;
 }
