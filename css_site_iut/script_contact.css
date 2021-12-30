@@ -29,6 +29,7 @@ form.formulaire {
 
 form.formulaire label {
 	color: var(--col1);
+	transition: all 0.2s ease-in-out;
 }
 
 form.formulaire label:hover {
@@ -68,6 +69,15 @@ input {
 .message p{
 	position: relative;
 	bottom: 20px;
+}
+
+.boutton {
+	background: lightgrey;
+	transition: all 0.2s ease-in-out;
+}
+
+.boutton:hover {
+	background:grey;
 }
 
 @media (orientation: portrait) {

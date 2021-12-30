@@ -1,45 +1,17 @@
 <!DOCTYPE html>
  <html>
     <head>
-         <title>Contactez-nous</title>
-         <meta charset="utf-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="../css_site_iut/script_all.css">
-         <link rel="stylesheet" href="../css_site_iut/script_contact.css">
+      <title>Contactez-nous</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css_site_iut/script_all.css">
+      <link rel="stylesheet" href="../css_site_iut/script_contact.css">
+      
+      <link rel="icon" href="../images/tete.png">
 
-    </head>
+
+   </head>
    <body>
-   <!-- code s'il y aurait une base de donnée -->
-   <!-- connexion à la base de données-->
-<!--    <?php include "connexion.php"; ?>
-   <?php // vérification de tous les champs
-         $condition=true;
-         if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['message']) || empty($_POST['mail']))
-         {
-            echo "ERREUR : Tous les champs n'ont pas été renseignés.";
-            $condition=false;
-         }
-         else
-         {
-            $nom=$_POST['nom'];
-            $prenom=$_POST['prenom'];
-            $message=$_POST['message'];
-            $mail=$_POST['mail'];
-            
-         }  
-         if ($condition) { // si toutes les conditions sont réunies :
-            //envoie du message dans la BDD
-            $reponse=$bdd->prepare('insert into Message values (:mail, :nom, :prenom, :message)');
-            $reponse->execute(array(
-               "mail" => htmlspecialchars($mail),
-               "nom" => htmlspecialchars($nom),
-               "prenom" => htmlspecialchars($prenom),
-               "message" => htmlspecialchars($message),
-            ));
-            echo "Message envoyé"               
-         }
-?> -->
-
 
       <nav class="flexbox-container">
 
@@ -65,7 +37,7 @@
          </p>
       </div>
 
-      <form action="contact.php" method="post" class="formulaire">
+      <form action="mail.php" method="post" class="formulaire">
 
          <label class="nom">
             Nom :
@@ -74,17 +46,17 @@
 
          <label class="prenom">
             Prénom :
-            <input type="text" name="prenom" value="Saisissez votre prénom"/>
+            <input type="text" name="prenom" value="Saisissez votre prénom" required/>
          </label>
 
          <label class="mail">
             Mail :
-            <input type="email" name="mail" value="Saisissez votre mail"/>            
+            <input type="email" name="mail" value="Saisissez votre mail" required/>            
          </label>
 
          <label class="message"> 
             Message :
-            <textarea name="message" cols="40" rows="4">Saisissez votre message</textarea>
+            <textarea name="message" cols="40" rows="4" required>Saisissez votre message</textarea>
          </label>
 
          <label>
