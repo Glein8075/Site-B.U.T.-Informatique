@@ -29,7 +29,7 @@ a:link {
 	content:'';
 	display: block;
 	margin: auto;
-	height: 3px;
+	height: 1%;
 	width: 0%;
 	border-radius: 20%;
 	background: transparent;
@@ -97,7 +97,7 @@ a:link {
 	background: linear-gradient(45deg, darkcyan, rgb(21, 196, 196));
 	padding: 15px ;
 	border-radius: 20%;
-    margin: 20px 40% 0 40%;
+    margin: 0 40% 0 40%;
 	transition: all 0.5s ease-in-out;
 	font-style: italic;
 }
@@ -144,8 +144,8 @@ a:link {
 }
 
 div.structure img {
-	height: 200px;
-	width: 300px;
+	height: 40%;
+	width: 100%;
 	filter: blur(3px);
 }
 
