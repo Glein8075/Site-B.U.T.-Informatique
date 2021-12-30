@@ -42,7 +42,8 @@ nav {
     display: block;
     position: sticky;
     background-color: darkcyan;
-    height: 8vh;
+    height: 2%;
+    width: 100%;
     top:0;
     z-index: 10;
 }
@@ -74,13 +75,13 @@ nav :hover {
 }
 
 .flexbox-item {
-    margin-left:5vw;
-    margin-right:5vw;
+    margin-left:3%;
+    margin-right:4%;
 }
 
 .lien {
-    width:42px;
-    height:42px;
+    width:4%;
+    height:6%;
     margin : 0px 5px;
 }
 
