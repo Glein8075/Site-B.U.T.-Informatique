@@ -91,3 +91,10 @@ article.left-content {
     margin-right: 50px;
     margin-left: 20vw;
 }
+
+@media (max-width: 995px) {
+
+    .flexbox-3 {
+        top: 3px;
+    }
+}

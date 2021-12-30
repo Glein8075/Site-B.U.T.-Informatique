@@ -14,6 +14,16 @@ div.content {
 	top: 12px;
 }
 
+.separateur {
+	padding: 15px;
+    shape-outside: margin-box;
+	border-radius: 0 0 50% 50%;
+	background-color: darkcyan;
+	position:sticky;
+	top: 8vh;
+	z-index: 10;
+}
+
 h1 {
 	left: calc(50vw - 300px);
 }
@@ -68,9 +78,9 @@ content p {
 .exemple p {
 	position: relative;
 	background: darkcyan;
-	width: 300px;
-	left: 200px;
-	top: 250px;
+	width: 20vw;
+	left: 10vw;
+	top: calc(10vw + 100px);
 	padding: 30px;
 	color: black;
 	border-radius: 10%;
@@ -84,10 +94,10 @@ content p {
 }
 
 img.competence {
-	width: 700px;
-	height: 450px;
+	width: 45vw;
+	height: 30vw;
 	position: relative;
-	left: 300px;
+	left: 20vw;
 	filter: grayscale(100%) invert(90%);
 	border: 4px solid blue;
 	transition: all 0.8s ease-in-out;
@@ -106,4 +116,37 @@ img.competence:hover {
 @keyframes appearsLeft {
     0% { transform: translate(-100px, 0px) }
     100% { transform: translate(0px, 0px) }	
+}
+
+@media (max-width: 995px) {
+
+    .flexbox-2 {
+        top: 3px;
+    }
+}
+
+@media (max-width: 1150px) {
+
+	.propos-2, .propos-3 {
+		margin: 0 30px 50px 30px;
+	}
+
+	.propos-1 {
+		margin-bottom: 50px;
+	}
+
+	.propos-2 {
+		border-bottom-right-radius: 10%;
+	}
+
+	.propos-3 {
+		border-bottom-left-radius: 10%;
+	}
+}
+
+@media (orientation: portrait) {
+    
+    h1 {
+        left: calc(50vw - 180px);
+    }
 }
