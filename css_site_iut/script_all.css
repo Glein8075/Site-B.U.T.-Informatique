@@ -6,6 +6,32 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+	position: absolute;
+	color:ivory;
+	justify-content: center;
+	text-shadow: 1px 1px 2px black, 0 0 0.2em cyan, 0 0 0.1em darkcyan;
+	font-size: 250%;
+	animation: appearsBot 0.5s;
+	animation-iteration-count: 1;
+}
+
+h1:after {
+	content:'';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0%;
+	border-radius: 20%;
+	background: transparent;
+	transition: width 0.5s ease, background-color 0.5s ease;
+}
+   
+h1:hover:after {
+	width: 80%;
+	background: ivory;
+}
+
 main{
     min-height:100%;
     font-family: Helvetica;
@@ -23,10 +49,10 @@ nav {
 
 nav img{
     height: 80%;
-    width: 80%;
+    width: 90%;
 }
 
-.flexbox-2, .flexbox-3, .flexbox-4{
+.flexbox-2, .flexbox-3, .flexbox-4, .flexbox-5 {
     position: relative;
     top: 15px;
     color: white;
@@ -93,6 +119,21 @@ img.lien:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@keyframes appearsRight {
+    0% { transform: translate(100px, 0px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
+@keyframes appearsLeft {
+    0% { transform: translate(-100px, 0px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
+@keyframes appearsBot {
+    0% { transform: translate(0px, 50px) }
+    100% { transform: translate(0px, 0px) }	
+}
+
 
 /* media querries pour le responsive */
 
@@ -105,12 +146,12 @@ img.lien:hover {
 
 } */
 
-@media (max-width: 800px) {
-    
-    .flexbox-2, .flexbox-3, .flexbox-4{
+/* @media (max-width: 800px) {
+
+    .flexbox-2, .flexbox-3, .flexbox-4, .flexbox-5 {
         position: relative;
         top: 5px;
         color: black;
         text-decoration: none;
     }
-}
+} */
