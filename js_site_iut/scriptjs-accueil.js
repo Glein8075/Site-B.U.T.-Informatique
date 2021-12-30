@@ -22,7 +22,7 @@ const mapinfo2 = document.querySelector('.adresse');
 
 let hauteur = div.clientHeight;
 let hauteur2 = 1650;
-let hauteur3 = 2800;
+let hauteur3 = 2900;
 
 window.addEventListener('scroll', () => {
 
