@@ -90,3 +90,10 @@ input {
 		margin: 60px 15vw 60px 15vw;
 	}
 }
+
+@media (max-width: 1035px) {
+
+    .flexbox-5 {
+        top: 3px;
+    }
+}

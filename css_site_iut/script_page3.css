@@ -1,7 +1,21 @@
-.container{
-  max-width: 100%;
-  margin: 0 auto;
-  font-size: 100%;
+h1 {
+	left: calc(50vw - 195px);
+}
+
+.part-one {
+  margin: 180px calc(20vw + 100px) 50px calc(20vw + 100px);
+  background: darkcyan;
+  border-radius: 10%;
+  padding: 30px 50px 30px 50px;
+}
+
+.separateur {
+	padding: 15px;
+	border-radius: 0 0 50% 50%;
+	background-color: darkcyan;
+	position:sticky;
+	top: 8vh;
+	z-index: 10;
 }
 
 .flexbox-4 {
@@ -10,16 +24,23 @@
   top: 12px;
 }
 
-.parallax{
+.parallax {
   background: url("../images/DevApp.jpg") no-repeat center;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
-  height: 350px;
+  height: 600px;
 }
 
 @media (max-width: 1035px) {
 
   .flexbox-4 {
       top: 3px;
+  }
+}
+
+@media (orientation: portrait) {
+    
+  h1 {
+      left: calc(50vw - 120px);
   }
 }

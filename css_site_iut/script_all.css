@@ -1,10 +1,12 @@
+@import url("https://font.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
     background-color:rgb(40, 40, 40);
     text-align: center;
     color: white;
     margin: 0;
     overflow-x: hidden;
-    font-family: Helvetica;
+    font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -83,7 +85,7 @@ nav a:hover {
 .lien {
     width:50px;
     height:50px;
-    margin: 0 1vw 0 1vw;
+    margin: 0 0.5vw 0 0.5vw;
     position: relative;
     top: 1vh;
 }
